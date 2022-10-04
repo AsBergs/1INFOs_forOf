@@ -20,8 +20,9 @@ if(numero % 2 === 0){
 }
 }
 
-document.write(`Lista de numeros pares em ordem crescente: </br> Pares: ${listaPares.sort((a, b) => (a - b)).join(", ")} </br> Impares: 
-${listaImpares.sort((a, b) => (a - b)).join(", ")}`)
+document.write(`Lista de numeros em ordem crescente: </br> Pares: ${listaPares.sort((a, b) => (a - b)).join(", ")} </br> Impares: 
+${listaImpares.sort((a, b) => (a - b)).join(", ")} </br> Lista em ordem decrescente: </br> Pares: ${listaPares.reverse().join(", ")} </br> Ímpares:
+ ${listaImpares.reverse().join(", ")}      `)
 
 
     //SAÍDA
