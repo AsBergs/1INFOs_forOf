@@ -10,14 +10,16 @@
     let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
 let listaIntPos = [];
     //PROCESSAMENTO
-for(numero of listaDeNumeros){
-    if(numero > 0){
+for(let numero of listaDeNumeros){
+    if(numero >= 0 && Number.isInteger(numero) === true){
         listaIntPos.push(numero);
     }
 }
 
     //SAÍDA
 document.write(`Lista de números inteiros e positivos: ${listaIntPos.join(", ")} </br> `)
-document.write(`Foram localizados ${listaIntPos.lenght} números`)
+document.write(`Foram localizados ${listaIntPos.length} números`)
+
+
 
 </script>
