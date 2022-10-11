@@ -9,9 +9,16 @@
     //ENTRADA
 
 
+    let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    let listaJoão = [];
+    let listaoutros = [];
     //PROCESSAMENTO
-
-
+    for (let nome of listaDeNomes) {
+        (nome.indexOf("João") != -1 || nome.indexOf("Joao") != -1) ? listaoutros.push(nome) :
+            listaJoão.push(nome);
+    }
     //SAÍDA
+    document.write(`OS nomes com Joao são: ${listaoutros.join(" - ")}`)
+
 
 </script>
